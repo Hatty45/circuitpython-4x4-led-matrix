@@ -1,6 +1,6 @@
 # Circuitpython 4x4 LED Matrix
 ## What it does
-You should be able to copy this code into your ```code.py``` file and make the changes as necessary, or you can place it as a separate file and import the functions.
+This code makes a 4x4 LED Matrix display 4x4 images (ideally a good beginner project on breadboards)
 
 ## Schematic
 <img width="1317" height="720" alt="image" src="https://github.com/user-attachments/assets/6ca3fa05-8d7d-4757-8c89-fbe942a1b827" />
