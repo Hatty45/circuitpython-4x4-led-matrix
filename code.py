@@ -70,24 +70,3 @@ def getfraction(full,xpos):
         full[2][xpos:xpos+4],
         full[3][xpos:xpos+4]
         )
-
-# leave 4 before and 4 after, because otherwise
-# it will collide the start and end of the images
-
-# also, in case you can't read, it says "matrix"
-fullword = (
-    (0,0,0,0,1,0,0,0,1,0,0,1,0,0,1,1,1,0,1,1,0,0,1,1,1,0,1,0,1,0,0,0,0),
-    (0,0,0,0,1,1,0,1,1,0,1,0,1,0,0,1,0,0,1,0,1,0,0,1,0,0,0,1,0,0,0,0,0),
-    (0,0,0,0,1,0,1,0,1,0,1,1,1,0,0,1,0,0,1,1,0,0,0,1,0,0,1,0,1,0,0,0,0),
-    (0,0,0,0,1,0,0,0,1,0,1,0,1,0,0,1,0,0,1,0,1,0,1,1,1,0,1,0,1,0,0,0,0)
-)
-
-index = 0 # where to start displaying the image from
-imagelength = len(fullword[0])-4 # length of image
-
-delay = 0.05 # delay in seconds
-
-
-while True:
-    holddraw(getfraction(fullword,index),delay*1000)
-    index = (index+1)%imagelength
